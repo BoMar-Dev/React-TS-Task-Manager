@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+.input {
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px  #ffffff;
+    
+}
+
+.input_box {
+    width: 100%;
+    border-radius: 30px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    transition: 0.3s;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+
+.input_box:focus {
+    box-shadow: 0 0 10px 1000px rgba(130, 113, 113, 0.5);
+    outline: none;
+}
+
+.input_submit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 20px;
+    right: 0px;
+    border: none;
+    background-color: rgba(172, 117, 174, 0.488);
+    color: rgb(27, 27, 27);
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px  #749eae;
+    
+    
+}
+
+.input_submit:hover {
+    background-color: rgba(95, 199, 204, 0.61);
+}
+
+.input_submit:active {
+    transform: scale(0.8);
+    box-shadow: 0 0 4px black;
+}
+
+.tasks{
+    display: flex;
+    justify-content:  space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.tasks_single {
+    display: flex;
+    width: 29.5%;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 15px;
+    background-image: url("https://images.unsplash.com/photo-1615715757401-f30e7b27b912?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80") ;
+    background-size: cover;
+}
+
+.tasks_single--text{
+    flex:1;
+    padding: 4px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    border-radius: 12px;
+}
+
+.tasks_single--text:focus{
+    outline: none;
+    font-family: 'Sedgwick Ave Display', cursive;
+    border-radius: 12px;
+    padding: 4px;
+
+}
+
+.icon {
+    margin-left: 10px;
+    font-size: 25px;
+    
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .input {
+     width: 95%;   
+    }
+    .tasks {
+      width: 95%;  
+    }
+
+    .tasks_single {
+      width:100%  
+    }
+}
